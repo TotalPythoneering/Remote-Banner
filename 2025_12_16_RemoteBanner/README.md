@@ -1,5 +1,5 @@
 ## Mission Banner
-I've this on on the bucket list for awhile ...
+I've this one has been on the bucket list for awhile ... thanks, Google! :^)
 
 ```
 A quick way
