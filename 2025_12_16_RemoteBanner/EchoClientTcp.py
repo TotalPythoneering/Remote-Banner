@@ -8,7 +8,7 @@ using this strategy.
 Authon: Randall Nagy
 Rev: 2025/12/16, 1.o
 File: EchoClientTcp.py
-Video: w.i.p.
+Video: https://ko-fi.com/post/Free-Remote-Controlled-Banner-Project-L4L61QDWFI
 Project: https://github.com/Python3-Training/TotalPythoneering
 Status: Testing Success
 '''

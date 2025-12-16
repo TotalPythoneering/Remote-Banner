@@ -9,7 +9,7 @@ Authon: Randall Nagy
 Nexus: https://https://ko-fi.com/randallnagy
 Rev: 2025/12/16, 1.o
 File: main.py
-Video: tbd.
+Video: https://ko-fi.com/post/Free-Remote-Controlled-Banner-Project-L4L61QDWFI
 Project: https://github.com/Python3-Training/TotalPythoneering
 Status: Testing Success
 '''
