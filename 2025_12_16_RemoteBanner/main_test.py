@@ -14,38 +14,41 @@ Project: https://github.com/Python3-Training/TotalPythoneering
 Status: Testing Success
 '''
 
-from EchoClientTcp import client_banner as echo
+#!/usr/bin/env python3
+'''
+Mission:
+Integrate the AI effort into our solution so as to test
+a basic echo. Be sure to run ai_rpc_server.py before
+running this file.
 
-def create(*args, **kwargs):
-    return echo('Create?')
+Authon: Randall Nagy
+Nexus: https://https://ko-fi.com/randallnagy
+Rev: 2025/12/16, 1.o
+File: main.py
+Video: tbd.
+Project: https://github.com/Python3-Training/TotalPythoneering
+Status: Testing Success
+'''
+import threading
+import subprocess
+import sys
+from EchoClientTcp import client_banner
 
-def move(*args, **kwargs):
-    return echo('Move?')
+message = "COLOR:WHITE|Testing Success?"
+response = client_banner(message)
+if not response[0]:
+    subprocess.Popen([sys.executable, "ai_tcp_server.py"])
+    response = client_banner(message)
+print(response)
+if response[0]:
+    print("Testing Success.")
+else:
+    print("Testing failure.")
 
-def use(*args, **kwargs):
-    return echo('Use?')
 
-def my_help(*args, **kwargs):
-    return echo('Help!')
 
-ops = {
-    '[C]reate': create,
-    '[M]ove':   move,
-    '[U]se':    use,
-    '[D]one':   quit, # built in!
-    '[H]elp':   my_help
-    }
 
-while True: # loop forever!
-    for key in ops:
-        print(key)
-    op = input("? ").strip()
-    if len(op) == 1:
-        for k in ops:
-            if k[1] == op.upper():
-                print(f'!{k}({ops[k]()})')
-                break
-    else:
-        print("Nope.")
+
+
 
 

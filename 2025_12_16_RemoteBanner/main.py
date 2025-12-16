@@ -13,10 +13,23 @@ Video: tbd.
 Project: https://github.com/Python3-Training/TotalPythoneering
 Status: Testing Success
 '''
-
+import threading
+import subprocess
+import sys
 from EchoClientTcp import client_banner
 
-print(client_banner(input('Message: ')))
+
+print("Enter message or 'COLOR:WHITE|message' (etc.)")
+message = input('Message: ')
+response = client_banner(message)
+if not response[0]:
+    subprocess.Popen([sys.executable, "ai_tcp_server.py"])
+    response = client_banner(message)
+print(response)
+
+
+
+
 
 
 
