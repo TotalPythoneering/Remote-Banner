@@ -9,4 +9,4 @@ For today!
 ```
 
 
-Here's [the nexus](https://https://ko-fi.com/randallnagy).
+Here's [the nexus](https://ko-fi.com/randallnagy).
